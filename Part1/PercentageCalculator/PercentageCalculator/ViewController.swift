@@ -50,7 +50,7 @@ class ViewController: UIViewController {
             self.percentageLabel.text = "\(v)%"
         }
         
-        self.resultLabel.text = "\(rV)"
+        self.resultLabel.text = "\(rV + 10)"
     }
     
     // MARK: - Percentage Calculation
