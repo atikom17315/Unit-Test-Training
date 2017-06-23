@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen_bg" translatesAutoresizingMaskIntoConstraints="NO" id="jFk-18-03i">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen_icon" translatesAutoresizingMaskIntoConstraints="NO" id="DsF-5I-vt6">
+                                <rect key="frame" x="137" y="283" width="101" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DfY-mh-VAH"/>
+                                    <constraint firstAttribute="width" secondItem="DsF-5I-vt6" secondAttribute="height" multiplier="101:100" id="pCv-4w-SnH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jFk-18-03i" secondAttribute="bottom" id="1Sf-a0-2N8"/>
+                            <constraint firstItem="jFk-18-03i" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WPb-4y-GlJ"/>
+                            <constraint firstItem="DsF-5I-vt6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Y7M-fX-RhW"/>
+                            <constraint firstItem="jFk-18-03i" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="d8P-LB-Cgf"/>
+                            <constraint firstAttribute="trailing" secondItem="jFk-18-03i" secondAttribute="trailing" id="ht8-Cs-BmU"/>
+                            <constraint firstItem="DsF-5I-vt6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mVP-hl-pKu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_screen_bg" width="375" height="667"/>
+        <image name="splash_screen_icon" width="101" height="100"/>
+    </resources>
+</document>

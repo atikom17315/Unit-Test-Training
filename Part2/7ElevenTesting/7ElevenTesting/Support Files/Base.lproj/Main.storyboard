@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TgT-P6-xPB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DB Adman X Bd.ttf">
+            <string>DBAdmanX-Bold</string>
+        </array>
+        <array key="DB Adman X.ttf">
+            <string>DBAdmanX</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="DQ0-iy-hKL">
+            <objects>
+                <viewController nibName="SignInViewController" id="TgT-P6-xPB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rYy-5t-25y"/>
+                        <viewControllerLayoutGuide type="bottom" id="qYs-2l-6Gu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g2D-K5-GPB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Gy3-6x-Lsb">
+                                <rect key="frame" x="37" y="204.5" width="300" height="138"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="anA-8D-Odt">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อีเมล" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFN-ay-Sg8">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="Uc1-jM-U7G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="DBAdmanX" family="DB Adman X" pointSize="16"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4tp-xa-AJO">
+                                                <rect key="frame" x="0.0" y="28" width="300" height="31"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zGF-5u-3yP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="T2A-Jp-w7M"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-q9-Opa" userLabel="line">
+                                                        <rect key="frame" x="0.0" y="30" width="300" height="1"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="z7L-Mv-DTR"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-vB-IT0">
+                                        <rect key="frame" x="0.0" y="79" width="300" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสผ่าน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfo-Qo-qOm">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="eUF-Qu-vzM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="DBAdmanX" family="DB Adman X" pointSize="16"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kqh-TP-tmb">
+                                                <rect key="frame" x="0.0" y="28" width="300" height="31"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYX-jx-GvN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="7af-Zh-icx"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dq-KF-WfO" userLabel="line">
+                                                        <rect key="frame" x="0.0" y="30" width="300" height="1"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="0nw-Nn-JUf"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="C83-QN-ob7"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1u-rP-Euq">
+                                <rect key="frame" x="37" y="402.5" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tX1-Sl-hcZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DBAdmanX-Bold" family="DB Adman X" pointSize="22"/>
+                                <state key="normal" title="เข้าสู่ระบบ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seven_logo" translatesAutoresizingMaskIntoConstraints="NO" id="j1B-WM-1GF">
+                                <rect key="frame" x="76" y="132.5" width="223" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="3sm-Oa-2nn"/>
+                                    <constraint firstAttribute="width" secondItem="j1B-WM-1GF" secondAttribute="height" multiplier="228:43" id="5S0-En-rtS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H1u-rP-Euq" firstAttribute="leading" secondItem="Gy3-6x-Lsb" secondAttribute="trailing" constant="-300" id="BEb-vq-c7Q"/>
+                            <constraint firstItem="Gy3-6x-Lsb" firstAttribute="centerY" secondItem="g2D-K5-GPB" secondAttribute="centerY" constant="-60" id="Fb7-Gp-orw"/>
+                            <constraint firstItem="Gy3-6x-Lsb" firstAttribute="centerX" secondItem="g2D-K5-GPB" secondAttribute="centerX" id="LAC-cx-JgP"/>
+                            <constraint firstItem="H1u-rP-Euq" firstAttribute="top" secondItem="Gy3-6x-Lsb" secondAttribute="bottom" constant="60" id="RJZ-1m-cv7"/>
+                            <constraint firstItem="j1B-WM-1GF" firstAttribute="centerX" secondItem="g2D-K5-GPB" secondAttribute="centerX" id="WZs-QE-N0H"/>
+                            <constraint firstItem="H1u-rP-Euq" firstAttribute="width" secondItem="Gy3-6x-Lsb" secondAttribute="width" id="yNW-tW-sRg"/>
+                            <constraint firstItem="Gy3-6x-Lsb" firstAttribute="top" secondItem="j1B-WM-1GF" secondAttribute="bottom" constant="30" id="ykS-i8-AK4"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xys-iO-wku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="seven_logo" width="227" height="42"/>
+    </resources>
+</document>
